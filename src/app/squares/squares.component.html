@@ -1,9 +1,13 @@
 <div class="squares">
-    <div (click)="setTitlesByCWH('papaya, 50px, 50px')" class="s1" style="background: papayawhip" #papayaSqure></div>
-    <div (click)="setTitlesByCWH('plum, 60px, 60px')"class="s2" style="background: plum" #plumSquare></div>
-    <div (click)="setTitlesByCWH('powderblue, 70px, 70px')" class="s3" style="background: powderblue" #powderblueSquare></div>
-    <div (click)="setTitlesByCWH('rebeccapurple, 80px, 80px')" class="s4" style="background: rebeccapurple" #rebeccapurpleSquare></div>
-    <p>A négyzet színe: {{color}} </p>
-    <p>A négyzet szélessége: {{width}} </p>
-    <p>A négyzet magassága: {{height}} </p>
+    <div (click)="setTitlesByCWH()" class="s1" style="background: papayawhip; width: 50px;height: 50px;" #squareElement></div>
+    <div (click)="setTitlesByCWH()"class="s2" style="background: plum;width: 60px;height: 60px;" #squareElement></div>
+    <div (click)="setTitlesByCWH()" class="s3" style="background: powderblue; width: 70px;height: 70px;" #squareElement></div>
+    <div (click)="setTitlesByCWH()" class="s4" style="background: rebeccapurple;width: 80px;height: 80px;" #squareElement></div>
+    <hr>
+    <p>A négyzet színe: {{colorTitle}} </p>
+    <hr>
+    <p>A négyzet szélessége: {{widthTitle}} </p>
+    <hr>
+    <p>A négyzet magassága: {{heightTitle}} </p>
+    <hr>
 </div>
