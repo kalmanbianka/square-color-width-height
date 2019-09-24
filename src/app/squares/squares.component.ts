@@ -9,7 +9,11 @@ export class SquaresComponent implements OnInit {
   colorTitle:string = 'szín';
   widthTitle:number = 0;
   heightTitle:number = 0;
-  @ViewChild('squareElement', {static:false}) squareElement:ElementRef;
+  @ViewChild('papayawhipSquare', {static:false}) papayawhipSquare:ElementRef;
+  @ViewChild('plumSquare', {static:false}) plumSquare:ElementRef;
+  @ViewChild('powderblueSquare', {static:false}) powderblueSquare:ElementRef;
+  @ViewChild('rebeccapurpleSquare', {static:false}) rebeccapurpleSquare:ElementRef;
+
  
 
 
@@ -18,9 +22,9 @@ export class SquaresComponent implements OnInit {
 
   ngOnInit() {
   }
-  setTitlesByCWH(){
-    this.colorTitle = this.squareElement.nativeElement.background;
-    this.widthTitle = this.squareElement.nativeElement.width;
-    this.heightTitle = this.squareElement.nativeElement.height;
+  setTitlesByCWHPapaya(){
+    this.colorTitle = this.papayawhipSquare.nativeElement.background;
+    this.widthTitle = this.papayawhipSquare.nativeElement.width;
+    this.heightTitle = this.papayawhipSquare.nativeElement.height;
   }
 }
